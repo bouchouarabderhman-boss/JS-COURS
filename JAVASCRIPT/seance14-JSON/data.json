@@ -1,0 +1,11 @@
+{
+  "nom": "Khaldi",
+  "prenom": "Khalid",
+  "age": 21,
+  "interests": null,
+  "skills": ["Js", "HTML", "CSS"],
+  "adresse": {
+    "ville": "Casablanca",
+    "quartier": "Sidi Maarouf"
+  }
+}

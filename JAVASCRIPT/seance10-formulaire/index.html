@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #ececec;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px 0;
+        margin: 0;
+    }
+
+    .container {
+        background: #fff;
+        padding: 20px 25px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 380px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        color: #444;
+    }
+
+    input {
+        width: 100%;
+        padding: 8px 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    span {
+        font-size: 13px;
+        margin-top: 3px;
+        display: block;
+    }
+
+    .btn-group {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        flex: 1;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        background: #888;
+        color: #fff;
+    }
+
+    button:hover {
+        opacity: 0.9;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Formulaire</h1>
+
+    <label for="txtNom">Nom</label>
+    <input type="text" id="txtNom">
+    <span id="errNom"></span>
+    <div class="btn-group">
+        <button id="btnAjouterNom">Ajouter</button>
+        <button id="btnRejeterNom">Rejeter</button>
+    </div>
+
+    <label for="txtPrenom">Prénom</label>
+    <input type="text" id="txtPrenom">
+    <span id="errPrenom"></span>
+    <div class="btn-group">
+        <button id="btnAjouterPrenom">Ajouter</button>
+        <button id="btnRejeterPrenom">Rejeter</button>
+    </div>
+
+    <label for="txtAge">Âge</label>
+    <input type="text" id="txtAge">
+    <span id="errAge"></span>
+    <div class="btn-group">
+        <button id="btnAjouterAge">Ajouter</button>
+        <button id="btnRejeterAge">Rejeter</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
